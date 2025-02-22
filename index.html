@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CSS website</title>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <!--  Navbar  -->
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li><a href='#home'>Home</a></li>
+      <li><a href='#about'>About us</a></li>
+      <li class="topnav-right"><a href='#news'>Contact</a></li>
+      <li class="topnav-right"><a href='#signup'>Sign up</a></li>
+      <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+
+  <!--  Container  -->
+  <div class="container" id="gradientContainer">
+    <div class="row">
+      <div class="col-6">
+        <div class="leftHero">
+          <h1 class="large">Crazy learning</h1>
+          <h1 class="large">I'm developing</h1>
+        </div>
+        <form>
+          <div class="leftHero">
+            <h2>Username</h2>
+            <input type="text" placeholder="Albert_Einstein" name='username' 
+            class="inputbox">
+            <h2>Password</h2>
+            <input type="text" placeholder="Password" name='password' 
+            class="inputbox">
+          </div>
+        </form>
+      </div>
+      <div class="col-6">
+        <div class="rightHero videoContainer">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IiapD0APZos?si=YnQDwi2cDKoGhZiL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container -->
+  <header>
+      <h1 class="section2Header">Why We Started This:</h1>
+  </header>
+  <!-- Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="infoBox">
+          <div class="devIcon">
+            <img src="devIcon.png" alt="devIcon">
+          </div>
+          <div class="belowIcon">
+            <label>Assignment</label>
+          </div>
+          <p>The reason I made this website is because it was part of a project that has been assigned to us
+            by our professor. We chose this topic because as college students,
+            we hate having to go through many apps for either topping up the leap
+            card or finding directions.
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="infoBox">
+          <div class="devIcon">
+            <img src="devIcon.png" alt="devIcon">
+          </div>
+          <div class="belowIcon">
+            <label>When it's due</label>
+          </div>
+          <p>The reason I made this website is because it was part of a project that has been assigned to us
+            by our professor. We chose this topic because as college students,
+            we hate having to go through many apps for either topping up the leap
+            card or finding directions.
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="infoBox">
+          <div class="devIcon">
+            <img src="devIcon.png" alt="devIcon">
+          </div>
+          <div class="belowIcon">
+            <label>What we learned</label>
+          </div>
+          <p>The reason I made this website is because it was part of a project that has been assigned to us
+            by our professor. We chose this topic because as college students,
+            we hate having to go through many apps for either topping up the leap
+            card or finding directions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class='learnMore'>Learn more</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <article> <!--  For information for article type of material  -->
+          <p>
+            The reason I made this website is because it was part of a project that has been assigned to us
+            by our professor. We chose this topic because as college students,
+            we hate having to go through many apps for either topping up the leap
+            card or finding directions. The reason I made this website is because it was part of a project that has been assigned to us
+            by our professor. We chose this topic because as college students,
+            we hate having to go through many apps for either topping up the leap
+            card or finding directions.
+          </p>
+        </article>
+      </div>
+      <div class="col-5">
+        <div class="botImage">
+          <img src="iOS_Slope.png" alt="iOSslopePNG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container -->
+  <footer class="footsy">
+    <div class="row">
+      <div class="col-3 mobileStack">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="col-3 mobileStack">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="col-3 mobileStack">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="col-3 mobileStack">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function dropdownMenu() {
+      var x = document.getElementById('dropdownClick');
+      if (x.className === 'topnav') {
+        x.className += ' responsive';
+        /* change topnav to topnav.responsive, and back when clicked again */
+      }
+      else {
+        x.className = 'topnav';
+      }
+    }
+  </script>
+  <script src="script.js" rel="scriptPage"></script>
+</body>
+</html>

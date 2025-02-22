@@ -1,0 +1,233 @@
+/*#########################   Defaults   ######################*/
+nav, 
+header, 
+footer{
+    display: block;
+}
+body{
+    line-height: 1rem;
+    margin: 0
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    /*  Can only use with flex  */
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+article p{
+    font-size: 25px;
+    padding: 30px;
+    line-height: 1.2em;
+}
+
+/*#########################   Navbar   ######################*/
+nav{
+    width: 100%;            /* Always since its a navbar */
+    margin: 0;
+}
+nav ul{
+    background-color: #55B3F3;
+    overflow: hidden;       /* When elements are too big for screen, just clip it*/
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li{
+    list-style: none;
+    float: left;            /* Makes the list be one line and left side of page*/
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: blue;
+}
+ul.topnav li a:hover{
+    background-color: aquamarine;
+}
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+/*#########################   Custom Styles   ######################*/
+#gradientContainer{
+    background-image: linear-gradient(#076DFF, #65A5FF);
+}
+div.leftHero{
+    margin-left: 30%;
+}
+div.rightHero{
+    margin-left: 10%;
+}
+h1.large{
+    color: white;
+    font-size: 56px;
+    line-height: 70px;
+}
+form h2{
+    color: white;
+}
+input[type='text']{
+    font-size: 20px;
+    width: 100%;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.videoContainer{
+    display: flex;
+    overflow: hidden;
+    margin-right: 5%;
+}
+h1.section2Header{
+    font-size: 65px;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 0;
+}
+div.infoBox{
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 2px 3px 0px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    border-radius: 10px;
+}
+div.devIcon{
+    width: 100%;
+    text-align: center;
+}
+div.belowIcon{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1em;
+}
+.infoBox p{
+    font-size: 20px;
+    line-height: 1em;
+    padding: 30px;
+}
+.learnMore{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    background-color: #0069FF;
+    padding: 15px 60px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+div.botImage img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+footer.footsy{
+    background-color: darkgray;
+    padding-left: 10%;
+}
+footer h1{
+    color: white;
+    font-size: 35px;
+}
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footsy ul li{
+    color: white;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+/*#########################   Mobile   ######################*/
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    .col-6, .col-4, .col-7, .col-5{
+        width: 100%;
+        margin: 0;
+    }
+    div.mobileStack{
+        width: 50%;
+        display: block;
+    }
+    input[type='text']{
+        width: 70%;
+    }
+    div.leftHero, div.rightHero{
+        margin: 15px;
+    }
+    div.infoBox{
+        padding: 5px;
+    }
+    h1.section2Header{
+        font-size: 55px;
+        line-height: 1em;
+        text-align: center;
+    }
+    article p{
+        font-size: 20px;
+    }
+    div.botImage{
+        margin: 10px;
+    }
+    div.botImage img{
+        width: 100%;
+    }
+}
